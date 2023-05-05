@@ -30,10 +30,12 @@ It is a global setup that is running with every test.Class that runs with every 
 1. There is only one main test scenario is automated , we need to automate all types of scenarios
 2. I would have create single method to add all items in a cart rather than calling methods separately for individual items,
 3. I would like to add functionality to the wrapper such that we don’t have dependencies on the raw IWebDriver instance.be called by different pages.
-4. GoToPage method was written twice in different page objects . It should be written in a generic way to 
+4. GoToPage method was written twice in different page objects . It should be written in a generic way to be called from different page objects.
 
 
 # Execution Report: 
 
 ![image](https://user-images.githubusercontent.com/47860484/236511862-91fa4ff5-f1ef-48f6-adb0-e4fb05a2ddb9.png)
+
+
 

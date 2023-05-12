@@ -1,6 +1,7 @@
 ﻿using Dummy_Project.PageObjects.Cart;
 using Dummy_Project.PageObjects.Home;
 using NUnit.Framework;
+using System.Security.Policy;
 using TechTalk.SpecFlow;
 
 namespace Dummy_Project.StepDefinitions;
@@ -59,6 +60,27 @@ internal class DummyProject
            var x =  actualItems.Any(actualItem => actualItem.Name.Equals(expectedItem, StringComparison.InvariantCultureIgnoreCase));
            Assert.That(x, Is.True);
         }
+    }
+
+    [Given(@"I get Item rows in a cart")]
+    public void IgetItemrowsinacart()
+    {
+        _cartPage.GetCartRows();
+    }
+
+    [When(@"I remove an item")]
+
+    public void IRemoveItem()
+    {
+        _cartPage.GetCartItems();
+        _cartPage.GetCartRows();
+        //_cartPage.GetName();
+
+    }
+
+    [Then(@"I can see remaining items in cart")]
+    public void ICanSeeRemainingItems()
+    {
 
     }
 }

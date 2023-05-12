@@ -76,11 +76,9 @@ namespace Dummy_Project.DummyProject
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("User can add items to cart")]
-        [NUnit.Framework.CategoryAttribute("tag1")]
         public void UserCanAddItemsToCart()
         {
-            string[] tagsOfScenario = new string[] {
-                    "tag1"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User can add items to cart", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 5
